@@ -1,0 +1,8 @@
+# pylint: skip-file
+
+import cv2
+cap = cv2.VideoCapture('cat.mp4')
+ret, frame = cap.read()
+while True:
+    ret, frame = cap.read()
+    print(frame)
